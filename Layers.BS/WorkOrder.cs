@@ -41,7 +41,7 @@ namespace Layers.BS
         public ent.WorkOrder GetOneById(int id)
         {
             var DetailsQuery = new dal.WorkOrder().GetOneById(id);
-            var res = Mapper.Map<data.WorkOrder, ent.WorkOrder>(DetailsQuery);
+            var res = Mapper.Map<data.WorkOrder, ent.WorkOrder>(DetailsQuery);   
             return res;
         }
     }
